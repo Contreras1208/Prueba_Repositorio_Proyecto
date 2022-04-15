@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>{% block title %} {% endblock %} </title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' href="/static/style.css">   <!-- para meterle el diseño CSS-->
+    <!-- Ese link permite poner iconos de paginas web que redirigan al link deseado (opcional)
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-2/css/all.min.css"> -->
+    <script src='main.js'></script> <!-- revisar -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- link para redirigir los puse en el html base para que siempre esten deisponibles en los demas html que creemos -->
+<body>
+
+    <nav>
+        <input type="checkbox" id="check" >
+        <label for="check" class="checkbuttom">
+            <i class="fas fa-bars"> </i>
+        </label>
+        <label class="logo">El Mago </label>
+
+        <ul>
+            <li><a class="Active" href="#"> Inicio</a></li>
+            <li><a href="#"> Noticias</a></li>
+            <li><a href="#"> Entrevistas</a></li>
+            <li><a href="#"> Sobre nosotros</a></li>
+            <li><a href="#"> Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        
+    </section>
+
+
+
+
+
+
+
+    <!-- 
+    <div class="header">
+        <h1>EL Mago </h1> <br>
+    </div>
+    <nav class="navbar">
+    <ul>
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Noticias">Noticias</a></li>
+        <li><a href="#Entrevistas">Entrevistas</a></li>
+        <li><a href="#info">Sobre nosotros</a></li>
+        <li><a href="#Contacto">Contacto</a></li>
+      </ul>
+    </nav>  -->
+    {% block contents %} {% endblock %} 
+
+    
+    <br>
+    {% block  contents2 %} 
+    
+    {% endblock %}
+
+
+    {% block contents3 %} 
+
+    {% endblock %}
+
+
+
+
+
+
+    <footer>
+        <!-- Poner contacto y redes sociales del dueño de la pág-->
+        <!-- 
+        <div class="Contacto "> 
+            <h4 id="Contacto"><b><u>Redes Sociales</u></b></h4>
+            <ul>
+                <li type="none"> </li> 
+            </ul>
+            <div class="social_networks">
+                <a href=" " class="github"><i class="fab fa-github"></i></a>
+            </div>
+        </div>  -->
+    </footer>
+</body>
+</html>
